@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>ショッピングカートの実装(4)</title>
+    <script src="app.js" type="module"></script>
+  </head>
+  <body>
+    <form id="cart-form">
+      <input id="name-input" required placeholder="商品名" />
+      <input id="price-input" required placeholder="単価" type="number" />
+      <input id="amount-input" required placeholder="数量" type="number" />
+      <button>追加</button>
+    </form>
+    <hr />
+    <ul id="cart-list">
+      <!-- 実装イメージ
+        <li>えんぴつ@100円 × 2個 = 200円</li>
+        <li>消しゴム@50円 × 1個 = 50円</li>
+        <li>ボールペン@150円 × 3個 = 450円</li>
+      -->
+    </ul>
+    <div>合計金額: <span id="total">0</span>円</div>
+  </body>
+</html>
