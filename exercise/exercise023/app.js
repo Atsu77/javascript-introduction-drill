@@ -1,19 +1,28 @@
 'use strict';
-const root = document.getElementById('root');
+//const root = document.getElementById('root');
 
 // add関数
-
-// add関数を呼び出す
+function add() {
+  return 2 + 3;
+}
+console.log(add());
 
 // getName関数
-
-// getName関数を呼び出す
+function getName() {
+  return "山根惇秀"
+}
+console.log(getName());
 
 // add100関数
-
-// add100関数を呼び出す
+function add100(num) {
+  return num + 100;
+}
+console.log(add100(100));
 
 // print関数
+function print(str1, str2) {
+  return str1 + str2;
+}
 
-// print関数を呼び出す
+console.log(print("山根", "惇秀"));
 

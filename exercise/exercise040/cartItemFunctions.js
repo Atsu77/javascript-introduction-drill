@@ -1,5 +1,5 @@
 // cartItemFunctions.jsに記述されている関数を、エクスポートできるようにする
-const generateCartItem = (name, price, amount) => {
+export const generateCartItem = (name, price, amount) => {
   return {
     name,
     price,
@@ -13,7 +13,7 @@ const generateCartItem = (name, price, amount) => {
   };
 };
 
-const getTotal = cartItemArray => {
+export const getTotal = cartItemArray => {
   let total = 0;
   for (const cartItem of cartItemArray) {
     total += cartItem.getSubtotal();

@@ -1,37 +1,34 @@
-'use strict';
-const root = document.getElementById('root');
+"use strict";
+const root = document.getElementById("root");
 
 // add関数
-function add() {
-  return 1 + 2;
-}
+const add = () => 1 + 2;
+
 // add関数を呼び出す
 // 戻り値があるので定数に代入する
 const addResult = add();
-root.innerHTML += addResult + '<br>';
+root.innerHTML += addResult + "<br>";
 
 // getName関数
-function getName() {
-  return '佐藤 太郎';
-}
+const getName = () => "佐藤 太郎";
+
 // getName関数を呼び出す
 // 戻り値があるので定数に代入する
 const getNameResult = getName();
-root.innerHTML += getNameResult + '<br>';
+root.innerHTML += getNameResult + "<br>";
 
 // add100関数
-function add100(a) {
-  return a + 100;
-}
+const add100 = (a) => a + 100;
 // add100関数を呼び出す
 // 戻り値があるので定数に代入する
 const add100Result = add100(20);
-root.innerHTML += add100Result + '<br>';
+root.innerHTML += add100Result + "<br>";
 
 // print関数
-function print(a, b) {
+const print = (a, b) => {
   root.innerHTML += a + b;
-}
+};
+
 // print関数を呼び出す
 // 戻り値はないので定数は不要
-print('佐藤 太郎', 'です');
+print("佐藤 太郎", "です");

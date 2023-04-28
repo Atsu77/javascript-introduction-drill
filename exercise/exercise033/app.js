@@ -1,8 +1,17 @@
 'use strict';
 const root = document.getElementById('root');
 
+const isNumber = (value) => {
+  return !isNaN(parseFloat(value)) && isFinite(value);
+}
+
 // テキストボックス付きのダイアログボックスを表示する
+const input = prompt("入力された文字が数値に変換できるか判定します。")
 
-// ユーザーが入力した文字列を、数値型に変換する
-
-// 結果によってメッセージをページに書き込む
+if(input === null || input === "") {
+  root.innerHTML = "文字を入力してOKをクリックしてください";
+} else if(isNumber(input)) {
+  root.innerHTML = `${input}は数値に変換できます`;
+} else {
+  root.innerHTML = `${input}は数値に変換できません`;
+}
